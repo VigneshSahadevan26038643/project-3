@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexFund - The Future of Crowdfunding</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">NexFund</div>
+        <nav>
+            <button id="btn-explore" class="nav-btn active">Explore Projects</button>
+            <button id="btn-create-project" class="nav-btn primary">Create Project</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero-section">
+            <div class="hero-content">
+                <h1>Fund the <span class="highlight">Future</span>.</h1>
+                <p>Join thousands of visionary creators and backers turning bold ideas into reality.</p>
+                <button class="cta-button" onclick="document.getElementById('projects-section').scrollIntoView({behavior: 'smooth'})">Discover Projects</button>
+            </div>
+        </section>
+
+        <!-- Projects Grid Section -->
+        <section class="projects-section" id="projects-section">
+            <h2>Featured Projects</h2>
+            <div id="projects-grid" class="projects-grid">
+                <!-- Projects injected by JS -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modals -->
+    <!-- Create Project Modal -->
+    <dialog id="modal-create" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" id="close-create">&times;</button>
+            <h2>Launch Your Idea</h2>
+            <form id="form-create">
+                <div class="form-group">
+                    <label for="create-title">Project Title</label>
+                    <input type="text" id="create-title" required placeholder="e.g. Next-Gen Tech">
+                </div>
+                <div class="form-group">
+                    <label for="create-image">Cover Image URL (Optional)</label>
+                    <input type="url" id="create-image" placeholder="https://...">
+                </div>
+                <div class="form-group">
+                    <label for="create-goal">Funding Goal ($)</label>
+                    <input type="number" id="create-goal" required min="100" placeholder="10000">
+                </div>
+                <div class="form-group">
+                    <label for="create-desc">Description</label>
+                    <textarea id="create-desc" required rows="4" placeholder="Tell us about your project..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Create Project</button>
+            </form>
+        </div>
+    </dialog>
+
+    <!-- Project Detail Modal -->
+    <dialog id="modal-detail" class="modal">
+        <div class="modal-content large">
+            <button class="close-btn" id="close-detail">&times;</button>
+            <div id="detail-view">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Payment/Contribute Modal -->
+    <dialog id="modal-contribute" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" id="close-contribute">&times;</button>
+            <h2>Back this Project</h2>
+            <p id="contribute-project-title"></p>
+            <form id="form-contribute">
+                <div class="form-group">
+                    <label for="contribute-amount">Contribution Amount ($)</label>
+                    <input type="number" id="contribute-amount" required min="1" placeholder="50">
+                </div>
+                <div class="form-group">
+                    <label for="card-details">Credit Card (Simulation)</label>
+                    <input type="text" id="card-details" required placeholder="0000 0000 0000 0000" pattern="\d{16}" title="16 digit card number" maxlength="16">
+                </div>
+                <button type="submit" class="submit-btn success-btn">Pay & Back</button>
+            </form>
+        </div>
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+</html>
