@@ -1,6 +1,6 @@
 // Mock Database setup using LocalStorage
-const DB_KEY_PROJECTS = 'nexfund_projects_v2';
-const DB_KEY_UPDATES = 'nexfund_updates_v2';
+const DB_KEY_PROJECTS = 'nexfund_projects_v3';
+const DB_KEY_UPDATES = 'nexfund_updates_v3';
 
 function initDB() {
     if (!localStorage.getItem(DB_KEY_PROJECTS)) {
@@ -11,7 +11,7 @@ function initDB() {
                 description: 'A next-generation personalized AI that anticipates your needs.',
                 goal: 50000,
                 raised: 15400,
-                image: 'https://picsum.photos/seed/quantum/600/400'
+                image: './assets/quantum_ai_assistant.png'
             },
             {
                 id: 2,
@@ -19,7 +19,7 @@ function initDB() {
                 description: 'Autonomous solar-powered drones that collect ocean plastics.',
                 goal: 100000,
                 raised: 85000,
-                image: 'https://picsum.photos/seed/drone/600/400'
+                image: './assets/ocean_cleanup_drone.png'
             },
             {
                 id: 3,
@@ -27,7 +27,7 @@ function initDB() {
                 description: 'Modular, automated vertical hydroponic farms for apartment living.',
                 goal: 25000,
                 raised: 3200,
-                image: 'https://picsum.photos/seed/garden/600/400'
+                image: './assets/neon_urban_garden.png'
             }
         ];
         localStorage.setItem(DB_KEY_PROJECTS, JSON.stringify(defaultProjects));
