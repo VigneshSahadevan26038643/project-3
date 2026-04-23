@@ -64,6 +64,10 @@
                     <span class="stat-label">Currently Borrowed</span>
                     <span class="stat-value" id="borrowedBooksCount">0</span>
                 </div>
+                <div class="stat">
+                    <span class="stat-label">Total Revenue</span>
+                    <span class="stat-value" id="totalRevenueCount">$0.00</span>
+                </div>
             </div>
 
             <!-- Books Grid -->
@@ -85,6 +89,19 @@
         <div class="modal-content glass-panel">
             <button class="close-modal" id="closeModalBtn">&times;</button>
             <div class="modal-body" id="modalBody">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Reader Modal -->
+    <div id="readerModal" class="modal-overlay hidden">
+        <div class="modal-content glass-panel reader-content">
+            <div class="reader-header">
+                <h2 id="readerTitle">Book Title</h2>
+                <button class="close-modal" id="closeReaderBtn">&times;</button>
+            </div>
+            <div class="reader-body" id="readerBody">
                 <!-- Content injected via JS -->
             </div>
         </div>
