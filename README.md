@@ -30,3 +30,20 @@ Running the application is incredibly simple. Zero installation is required:
 2. Navigate into the `task 1/public/` directory.
 3. Simply double click on `index.html` to open it in your favorite modern browser (Chrome, Firefox, Edge, Safari).
 4. *Try creating a new project or contributing to the AI/Drone placeholders! Everything you do will automatically persist inside your browser.*
+
+---
+
+## 📚 Task 2: NexLib - Personal Book Library
+
+**Task 2** introduces **NexLib**, a professional, high-end web application for managing a personal book library. Designed with a sleek dark mode and stunning glassmorphism effects, it provides a visually captivating experience for organizing your favorite reads.
+
+### ✨ Task 2 Features
+- **Dynamic Book Search & Categorization**: Instantly filter through your library by categories (Fiction, Sci-Fi, Classics) or search for specific titles and authors.
+- **Borrowing System**: Keep track of the books you're reading with a built-in borrowing system that updates real-time statistics.
+- **Persistent Data**: Similar to Task 1, all your books, categories, and borrowing history are securely stored in your browser's LocalStorage, meaning your library is saved without needing a backend server!
+- **High-End UI**: Built entirely from scratch utilizing premium typography (Outfit font), fluid animations, custom CSS properties, and an immersive dark aesthetic.
+
+### 🚀 How to Run Task 2
+1. Navigate into the `task 2/` directory.
+2. Open the `index.html` file directly in your browser.
+3. Enjoy your new modern book library!
