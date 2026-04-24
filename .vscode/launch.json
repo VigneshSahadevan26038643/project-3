@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open index.html in Chrome",
-            "file": "${workspaceFolder}/task 1/public/index.html"
+            "name": "Open Task 3 in Chrome",
+            "file": "${workspaceFolder}/task 3/index.html"
         }
     ]
 }
